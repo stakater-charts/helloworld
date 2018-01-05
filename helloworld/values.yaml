@@ -1,0 +1,9 @@
+kubernetes:
+  host: https://kubernetes.default
+  namespace: default
+
+helloworld:
+  image:
+    name: tutum/hello-world
+    tag: latest
+    pullPolicy: IfNotPresent
