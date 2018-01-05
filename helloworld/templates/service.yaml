@@ -16,12 +16,12 @@ items:
       release: {{ .Release.Name | quote }}
       heritage: {{ .Release.Service | quote }}
       version: 1.0.0
-    name: tutum
+    name: helloworld
   spec:
     ports:
     - name: http
       port: 80
       protocol: TCP
-      targetPort: 5601
+      targetPort: 80
     selector:
       app: {{ template "fullname" . }}

@@ -1,9 +1,9 @@
-# chart-tutum
-This repository contains 1 chart that is used to deploy tutum to kubernetes.
-- tutum
+# chart-helloworld
+This repository contains 1 chart that is used to deploy helloworld to kubernetes.
+- helloworld
 
 ## Installing
-Install `tutum` chart
+Install `helloworld` chart
 ```
-helm install --name tutum chartmuseum/tutum
+helm install --name helloworld chartmuseum/helloworld
 ```

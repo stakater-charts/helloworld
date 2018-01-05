@@ -11,7 +11,7 @@ items:
       release: {{ .Release.Name | quote }}
       heritage: {{ .Release.Service | quote }}
       version: {{ .Chart.Version }}
-    name: tutum
+    name: helloworld
   spec:
     replicas: 1
     selector:
@@ -28,13 +28,13 @@ items:
           version: 1.0.0
       spec:
         containers:
-        - image: "{{ .Values.tutum.image.name }}:{{ .Values.tutum.image.tag }}"
-          imagePullPolicy: {{ .Values.tutum.image.pullPolicy }}
+        - image: "{{ .Values.helloworld.image.name }}:{{ .Values.helloworld.image.tag }}"
+          imagePullPolicy: {{ .Values.helloworld.image.pullPolicy }}
           livenessProbe:
             initialDelaySeconds: 60
             tcpSocket:
               port: 80
-          name: tutum
+          name: helloworld
           readinessProbe:
             httpGet:
               path: /
