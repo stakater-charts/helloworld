@@ -1,0 +1,11 @@
+apiVersion: v1
+name: tutum
+description: Tutum chart that runs on kubernetes
+version: 1.0.0
+keywords:
+  - tutum
+  - kubernetes
+home: https://github.com/stakater/chart-tutum
+maintainers:
+- name: Stakater
+  email: stakater@aurorasolutions.io
