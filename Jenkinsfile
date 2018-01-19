@@ -1,5 +1,5 @@
 #!/usr/bin/groovy
-@Library('github.com/stakater/fabric8-pipeline-library@helm-node')
+@Library('github.com/stakater/fabric8-pipeline-library@master')
 
 String chartPackageName = ""
 String chartName = "helloworld"
