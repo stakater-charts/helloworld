@@ -1,5 +1,5 @@
 #!/usr/bin/groovy
-@Library('github.com/stakater/fabric8-pipeline-library@master')
+@Library('github.com/stakater/fabric8-pipeline-library@add-funcs')
 
 String chartPackageName = ""
 String chartName = "helloworld"
@@ -12,6 +12,11 @@ clientsNode(clientsImage: 'stakater/kops-ansible:helm-bundle') {
         
         stage('Init Helm') {
             sh "helm init --client-only"
+
+            def result = io.stakater.Common.shOutput """
+                echo "Testing"
+            """
+            println result
         }
 
         stage('Prepare Chart') {
