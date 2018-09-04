@@ -5,7 +5,7 @@ version: 1.0.0
 keywords:
   - helloworld
   - kubernetes
-home: https://github.com/stakater/chart-helloworld
+home: https://github.com/stakater-charts/helloworld
 maintainers:
 - name: Stakater
   email: stakater@aurorasolutions.io
